@@ -5,5 +5,60 @@
   height: 8vh;
 
   background-color: rgba(45, 45, 55, 0.5);
+  display: flex;
+  justify-content: center;
+  border-bottom: 0.15vh solid white;
+}
+
+.navbar-container .navbar-dropdown {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 9.5vh;
+  width: 15%;
+  height: 20%;
+  border-radius: 10px 10px;
+  border: 0.15vh solid white;
+  background-color: rgba(45, 45, 55, 0.5);
+  color: white;
+}
+
+.navbar-dropdown ul {
   margin: 0 auto;
+}
+
+.navbar-dropdown li {
+  list-style: none;
+  position: relative;
+}
+
+.navbar-dropdown li:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3%;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-in-out;
+}
+
+.navbar-dropdown li:hover:after {
+  transform: scaleX(100%);
+  transform-origin: bottom left;
+}
+
+.navbar-dropdown li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-container img {
+  margin-top: 1vh;
+  height: 75%;
+  border-radius: 100%;
 }
