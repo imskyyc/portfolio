@@ -5,5 +5,5 @@
 </template>
 
 <script>
-import '@/assets/global.css';
+import '@/assets/app.scss';
 </script>

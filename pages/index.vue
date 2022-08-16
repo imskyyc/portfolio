@@ -2,7 +2,7 @@
   <p>testIndex</p>
 </template>
 
-<script>
+<script setup>
 definePageMeta({
   layout: "default"
 })  

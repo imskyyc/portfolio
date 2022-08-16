@@ -7,8 +7,3 @@
     <slot />
   </div>
 </template>
-
-<script>
-import '@/assets/navbar.css';
-
-</script>
